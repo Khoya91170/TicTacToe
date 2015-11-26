@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   	android:background="@drawable/strechbis"
+    tools:context="test.v2.ModeUnJoueur" >
+
+    <TextView
+        android:id="@+id/txtPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:text="@string/msgPlayerName" />
+
+    <EditText
+        android:id="@+id/inNamePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPlayerName"
+        android:layout_alignBottom="@+id/txtPlayerName"
+        android:layout_alignParentRight="true"
+        android:ems="8"
+       	android:textColor="#fff"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtChooseSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtPlayerName"
+        android:layout_marginTop="26dp"
+        android:textColor="#fff"
+        android:text="@string/msgSymbol" />
+
+    <RadioGroup
+        android:id="@+id/radioSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inNamePlayer"
+        android:layout_alignTop="@+id/txtChooseSymbol"
+        android:layout_below="@+id/inNamePlayer"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cross_radiobutton_selector"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/circle_radiobutton_selector" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtFirstToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtChooseSymbol"
+        android:layout_below="@+id/radioSymbol"
+        android:layout_marginTop="42dp"
+        android:textColor="#fff"        
+        android:text="@string/msgFirstToPlay" />
+
+    <RadioGroup
+        android:id="@+id/radioFirstToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioSymbol"
+        android:layout_alignTop="@+id/txtFirstToPlay"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioCrossFTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cross_radiobutton_selector"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioCircleFTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/circle_radiobutton_selector" />
+    </RadioGroup>
+
+
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_below="@+id/radioFirstToPlay"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="20dp"
+                android:background="@drawable/fondbouton"
+                android:text="@string/msgLaunchGame" />
+            
+            	<TextView
+        android:id="@+id/txtGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/home"
+       	android:textColor="#fff"
+     />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/strechbis"
+    tools:context="test.v2.MainActivity" >
+
+    <TextView android:text="@string/msgAccueil" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:id="@+id/txtBienvenue" />
+
+    <TextView
+        android:text="@string/msgOnePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOnePlayer"
+        android:layout_below="@+id/txtBienvenue"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:background="@drawable/fondbouton"
+        android:padding="5dp"
+        android:layout_marginTop="66dp" />
+
+    <TextView
+        android:text="@string/msgTwoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTwoPlayer"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/txtOnePlayer"
+        android:textColor="#000"
+        android:background="@drawable/fondbouton"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/msgCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCredit"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/txtTwoPlayer"
+        android:textColor="#000"
+        android:background="@drawable/fondbouton"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

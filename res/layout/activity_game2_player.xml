@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/strechbis"
+    tools:context="test.v2.Game2Player" >
+
+<TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="test.v2.Game" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/blankbis" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtinfoJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtinfoJ1"
+        android:layout_alignBottom="@+id/txtinfoJ1"
+        android:layout_toRightOf="@+id/txtInfo"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/txtinfoJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_below="@+id/txtInfo"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinfoJ2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fondbouton"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/restart" />
+
+    <TextView
+        android:id="@+id/txtgoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRestart"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:text="@string/home" />
+
+</RelativeLayout>

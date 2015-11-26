@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/strechbis"
+    tools:context="test.v2.ModeDeuxJoueurs" >
+
+    <TextView
+        android:id="@+id/txtPlayerName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:text="@string/msgPlayerName1" />
+
+    <EditText
+        android:id="@+id/inNamePlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPlayerName1"
+        android:layout_alignBottom="@+id/txtPlayerName1"
+        android:layout_alignParentRight="true"
+        android:ems="8"
+        android:textColor="#fff"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/inNamePlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_alignBaseline="@+id/txtPlayerName2"
+        android:layout_alignBottom="@+id/txtPlayerName2"
+        android:layout_alignParentRight="true"
+        android:ems="8"
+        android:textColor="#fff"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/txtPlayerName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inNamePlayer1"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:text="@string/msgPlayerName2" />
+    
+    <TextView
+        android:id="@+id/txtSymbolJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtPlayerName2"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:text="@string/msgSymbolPlayer1"
+     />
+    
+
+    
+     <RadioGroup
+        android:id="@+id/radioSymbolJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inNamePlayer2"
+        android:layout_alignTop="@+id/txtSymbolJ1"
+        android:layout_below="@+id/inNamePlayer2"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioCrossJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cross_radiobutton_selector"
+            android:checked="true" 
+        />
+
+        <RadioButton
+            android:id="@+id/radioCircleJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/circle_radiobutton_selector" 
+        />
+    </RadioGroup>
+    
+	<TextView
+        android:id="@+id/txtSymbolJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSymbolJ1"
+        android:layout_marginTop="55dp"
+        android:textColor="#fff"
+        android:text="@string/msgSymbolPlayer2"
+     />
+	
+     <RadioGroup
+        android:id="@+id/radioSymbolJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioSymbolJ1"
+        android:layout_alignTop="@+id/txtSymbolJ2"
+        android:layout_below="@+id/radioSymbolJ1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioCrossJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cross_radiobutton_selector"
+        />
+
+        <RadioButton
+            android:id="@+id/radioCircleJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/circle_radiobutton_selector" 
+			android:checked="true" 
+        />
+    </RadioGroup>
+    
+     	<TextView
+        android:id="@+id/txtFirstPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSymbolJ2"
+        android:layout_marginTop="55dp"
+        android:textColor="#fff"
+        android:text="@string/msgFirstToPlay"
+     />
+     
+     	
+     	     <RadioGroup
+        android:id="@+id/radioFirstToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioSymbolJ2"
+        android:layout_alignTop="@+id/txtFirstPlayer"
+        android:layout_below="@+id/radioSymbolJ2"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioJ1First"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/J1"
+            android:textColor="#fff"
+            android:checked="true" 
+        />
+
+        <RadioButton
+            android:id="@+id/radioJ2First"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/J2"
+        />
+    </RadioGroup>
+    
+	<Button
+		android:id="@+id/btnPlay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/radioFirstToPlay"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:text="@string/msgLaunchGame" 
+		android:background="@drawable/fondbouton"
+	/>
+     	                 
+	<TextView
+        android:id="@+id/txtGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/home"
+       	android:textColor="#fff"
+     />
+	
+
+</RelativeLayout>
